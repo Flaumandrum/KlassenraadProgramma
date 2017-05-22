@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Klassenraad.Klasses
+namespace Classes
 {
-    class Leerkrachten
+    public class Leerkrachten
     {
         //variabelen
         Int32 id;

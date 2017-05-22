@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.OleDb;
 
-namespace Klassenraad.Klasses
+namespace Classes
 {
-    class DBKlassenraad
+    public class DBKlassenraad
     {
 
             //variabalen

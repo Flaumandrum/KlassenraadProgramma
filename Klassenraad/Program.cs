@@ -4,10 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
-using Klassenraad.Klasses;
 
-
-
+using Classes;
 
 
 namespace Klassenraad
@@ -34,7 +32,7 @@ namespace Klassenraad
         static List<Klas> lijst = new List<Klas>();
         static List<Groep> GeplandeGroepen = new List<Groep>();
         
-
+        
 
 
         //vul de lijst met klassen

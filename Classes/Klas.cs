@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Klassenraad.Klasses;
 
-
-
-namespace Klassenraad.Klasses
+namespace Classes
 {
     
-    class Klas 
+    public class Klas 
     {
         //Variabelen
         Int32 id = 0;
