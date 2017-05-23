@@ -81,13 +81,17 @@ namespace Classes
         //stuur datetime van laatste klas door
         public DateTime GetDateTimeLaatsteKlas()
         {
-            if(geplandeKlassen.Count == 0)
+            if (geplandeKlassen.Count == 0)
             {
                 laatsteKlas = DateTime.Now;
                 laatsteKlas = laatsteKlas.Date.Add(new TimeSpan(beginuur, beginmin, 0));
             }
+            else
+            {
+                VulLaatsteUurIn();
+            }
 
-            VulLaatsteUurIn();
+            
 
             return laatsteKlas;
         }
