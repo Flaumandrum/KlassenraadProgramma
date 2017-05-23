@@ -86,6 +86,9 @@ namespace Classes
                 laatsteKlas = DateTime.Now;
                 laatsteKlas = laatsteKlas.Date.Add(new TimeSpan(beginuur, beginmin, 0));
             }
+
+            VulLaatsteUurIn();
+
             return laatsteKlas;
         }
 
