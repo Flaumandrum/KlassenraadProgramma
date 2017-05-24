@@ -315,14 +315,14 @@ namespace Klassenraad
                         DateTime tijd2 = teTestenKlas.GetBeginuur();
                         Int32 test1 = DateTime.Compare(tijd1, tijd2);
                         Int32 test2 = DateTime.Compare(k.GetEinduur(), teTestenKlas.GetBeginuur());
-                        if (DateTime.Compare(k.GetBeginuur(),teTestenKlas.GetBeginuur())<0 && DateTime.Compare(k.GetEinduur(),teTestenKlas.GetBeginuur())>0)
+                        if (DateTime.Compare(k.GetBeginuur(),teTestenKlas.GetBeginuur())<=0 && DateTime.Compare(k.GetEinduur(),teTestenKlas.GetBeginuur())>=0)
                         {
                             overlapKlassen.Add(k);
                         }
                         //Kijk van deze klassen of het beginuur later is dan het beginuur van de klas die we willen plannen
                         // Als dat zo is, dan moeten we kijken of dit beginuur later valt dan het einduur van de te testen klas
                         // als dit het geval is dan overlappen ze en moeten we de LKR controleren 
-                        else if (DateTime.Compare(k.GetBeginuur(),teTestenKlas.GetBeginuur())>0 && DateTime.Compare(k.GetBeginuur(), teTestenKlas.GetEinduur())<0)
+                        else if (DateTime.Compare(k.GetBeginuur(),teTestenKlas.GetBeginuur())>=0 && DateTime.Compare(k.GetBeginuur(), teTestenKlas.GetEinduur())<=0)
                         {
                             overlapKlassen.Add(k);
                         }
